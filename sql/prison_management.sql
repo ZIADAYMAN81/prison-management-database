@@ -701,7 +701,7 @@ insert into Require(St_Id,Sup_Id,Reason_of_requirment)
 values ('7','1','to eat');
 
 
-/* ziad Query */
+/* Query */
 
 
 select avg (salary) as 'average salary' ,F_name as 'first name ',L_Name as 'last name', Job_Description as 'job describtion' 
@@ -808,9 +808,9 @@ where P_Id=Pr_Id);
 
 
 
-/* ziad Query */
 
-/* MOHMED Query */
+
+
 
 
 SELECT S_DOB, Street_Name
@@ -871,13 +871,7 @@ where  P_Id=Remand.Pr_Id and P_Id=Crime.Pr_Id;
 
 
 
-/* MOHMED Query */
 
-
-
-
-
-/* Abdelrahman Query */
 
 SELECT P_Id, F_Name, L_Name, P_Religion  
 From Prisoner
@@ -919,15 +913,7 @@ where Equipment_Price > all (select min(Equipment_Price)
 from Equipment 
 );
 
-/* Abdelrahman Query */
 
-
-
-
-
-
-
-/* Seif Query */
 SELECT Phone_No ,Staff_Id
 FROM  Staff 
 WHERE Staff_Id BETWEEN '5' AND '7';
@@ -959,11 +945,7 @@ from Equipment join Utilize
 on E_Id=Equipment_id;
 
 
-/* Seif Query */
 
-
-
-/* KAREEM Query */
 
 SELECT F_Name, L_Name
 FROM Prisoner
@@ -1006,9 +988,7 @@ ON Cell_Number in (select Cell_NO
 from Supervise)
 and Cell_NO=Cell_Number;
 
-/* KAREEM Query */
 
-/* yehia Query */
 
 select F_Name+' '+L_Name as'Prisoner Name',Transportation_cost as 'Transportaion Cost',Car_Arriving as 'Arriving time' ,Car_Departure as 'Departure time'
 from Prisoner,Transport_by,Trasportation
@@ -1056,4 +1036,3 @@ and Past_Job='Programmer';
 
 
 
-/* yehia Query */
