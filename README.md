@@ -1,7 +1,6 @@
 # Prison Management Database System
 
 > Database Systems course project, The British University in Egypt, 2022. Microsoft SQL Server (T-SQL).
-> I designed and wrote the schema, sample data and queries (the coursework was submitted as a group).
 
 A relational database for running a prison. It covers inmates, crimes, cells and halls, staff and guards, visitors, transport, equipment, supplies and activities. The project starts from an ER model and goes through relational mapping, a full schema with integrity constraints, sample data and analytical queries.
 

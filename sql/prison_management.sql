@@ -1,8 +1,7 @@
 /* =====================================================================
    Prison Management Database System (Microsoft SQL Server / T-SQL)
    Database Systems course project, The British University in Egypt, 2022.
-   Schema, sample data and queries written by Ziad Ayman
-   (coursework submitted as a group).
+   Schema, sample data and queries written by Ziad Ayman.
    Run in SSMS or Azure Data Studio: re-creates the Prison database, the
    22 tables with keys and constraints, sample data, then the queries.
    Sample personal data (emails, phone numbers) is fictional/anonymised.
