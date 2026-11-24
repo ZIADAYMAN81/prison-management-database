@@ -1,6 +1,22 @@
-
-drop database prison ;
+/* =====================================================================
+   Prison Management Database System (Microsoft SQL Server / T-SQL)
+   Database Systems course project, The British University in Egypt, 2022.
+   Schema, sample data and queries written by Ziad Ayman
+   (coursework submitted as a group).
+   Run in SSMS or Azure Data Studio: re-creates the Prison database, the
+   22 tables with keys and constraints, sample data, then the queries.
+   Sample personal data (emails, phone numbers) is fictional/anonymised.
+   ===================================================================== */
+IF DB_ID('Prison') IS NOT NULL
+BEGIN
+    ALTER DATABASE Prison SET SINGLE_USER WITH ROLLBACK IMMEDIATE;
+    DROP DATABASE Prison;
+END
+GO
 CREATE DATABASE Prison;
+GO
+USE Prison;
+GO
 
 
 create table Control_Room
@@ -1033,6 +1049,3 @@ WHERE NOT EXISTS (SELECT *
 FROM Remand
 WHERE P_Id = Pr_Id)
 and Past_Job='Programmer';
-
-
-

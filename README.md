@@ -1,6 +1,7 @@
 # Prison Management Database System
 
 > Database Systems course project, The British University in Egypt, 2022. Microsoft SQL Server (T-SQL).
+> I designed and wrote the schema, sample data and queries (the coursework was submitted as a group).
 
 A relational database for running a prison. It covers inmates, crimes, cells and halls, staff and guards, visitors, transport, equipment, supplies and activities. The project starts from an ER model and goes through relational mapping, a full schema with integrity constraints, sample data and analytical queries.
 
@@ -40,8 +41,9 @@ WHERE m.S_ID = Staff_Id AND Remand_No = R_no
 
 ## Run it
 1. Open `sql/prison_management.sql` in **SQL Server Management Studio** or Azure Data Studio.
-2. Remove or comment out the first line (`drop database prison;`) on a fresh server.
-3. Execute the script. It creates the `Prison` database, the tables and the data, and runs the queries.
+2. Execute the whole script. It safely drops any existing `Prison` database, re-creates it, switches to it (`USE Prison`), builds the 22 tables, loads the sample data and runs the queries.
+
+Sample personal data in the script (names, emails, phone numbers) is fictional or anonymised.
 
 ## Possible extensions
 Views for common reports, stored procedures for admissions and transfers, triggers for cell-capacity checks, `CHECK` constraints and indexing for the query workload.
