@@ -46,3 +46,7 @@ Sample personal data in the script (names, emails, phone numbers) is fictional o
 
 ## Possible extensions
 Views for common reports, stored procedures for admissions and transfers, triggers for cell-capacity checks, `CHECK` constraints and indexing for the query workload.
+
+## License
+
+Released under the [MIT License](LICENSE).
